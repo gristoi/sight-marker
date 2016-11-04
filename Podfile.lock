@@ -1,0 +1,32 @@
+PODS:
+  - Material (2.3.1):
+    - Material/Core (= 2.3.1)
+  - Material/Core (2.3.1)
+  - Realm (2.0.3):
+    - Realm/Headers (= 2.0.3)
+  - Realm/Headers (2.0.3)
+  - RealmSwift (2.0.3):
+    - Realm (= 2.0.3)
+
+DEPENDENCIES:
+  - Material (from `https://github.com/CosmicMind/Material.git`, branch `development`)
+  - RealmSwift
+
+EXTERNAL SOURCES:
+  Material:
+    :branch: development
+    :git: https://github.com/CosmicMind/Material.git
+
+CHECKOUT OPTIONS:
+  Material:
+    :commit: fca8aa5e2caf43f2aaa7f7651e7c8b521f9ac903
+    :git: https://github.com/CosmicMind/Material.git
+
+SPEC CHECKSUMS:
+  Material: 73321dd4251d0c16adb0fdac6b6c45e8d7ae64e5
+  Realm: 5f008bfe3c8c47142eddfc30b8c1584cde22db24
+  RealmSwift: 5afb451f65b682242f272dbb52d5c6f6e343c980
+
+PODFILE CHECKSUM: 439c2aed856dc83b43090a6b83b3ce4e144ea6f9
+
+COCOAPODS: 1.0.1
