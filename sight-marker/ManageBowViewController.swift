@@ -12,9 +12,9 @@ import XLForm
 class ManageBowViewController: XLFormViewController {
 
     fileprivate struct Tags {
-        static let Name = "name"
-        static let Email = "email"
-        static let Twitter = "twitter"
+        static let Name = "Name"
+        static let BowType = "Bow Type"
+        static let DrawWeight = "Draw Weight"
         static let Number = "number"
         static let Integer = "integer"
         static let Decimal = "decimal"
@@ -43,6 +43,10 @@ class ManageBowViewController: XLFormViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(ManageBowViewController.savePressed(_:)))
     }
 
+    override func viewDidLayoutSubviews() {
+        self.view.layoutIfNeeded()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -53,11 +57,10 @@ class ManageBowViewController: XLFormViewController {
             var section : XLFormSectionDescriptor
             var row : XLFormRowDescriptor
             
-            form = XLFormDescriptor(title: "Text Fields")
+            form = XLFormDescriptor(title: "Add A Bow")
             form.assignFirstResponderOnShow = true
             
-            section = XLFormSectionDescriptor.formSection(withTitle: "TextField Types")
-            section.footerTitle = "This is a long text that will appear on section footer"
+            section = XLFormSectionDescriptor.formSection(withTitle: "Bow Setup")
             form.addFormSection(section)
             
             
@@ -65,14 +68,25 @@ class ManageBowViewController: XLFormViewController {
             row = XLFormRowDescriptor(tag: Tags.Name, rowType: XLFormRowDescriptorTypeText, title: "Name")
             row.isRequired = true
             section.addFormRow(row)
-            
-            // Email
-            row = XLFormRowDescriptor(tag: Tags.Email, rowType: XLFormRowDescriptorTypeEmail, title: "Email")
-            // validate the email
-            row.addValidator(XLFormValidator.email())
-            section.addFormRow(row)
-            
-            // Twitter
+        
+        row = XLFormRowDescriptor(tag: Tags.BowType, rowType:XLFormRowDescriptorTypeSelectorPush, title:"Bow Type")
+        row.selectorOptions = [XLFormOptionsObject(value: 0, displayText: "Barebow"),
+                               XLFormOptionsObject(value: 1, displayText:"Compound"),
+                               XLFormOptionsObject(value: 2, displayText:"Longbow"),
+                               XLFormOptionsObject(value: 3, displayText:"Recurve")
+        ]
+        row.value = XLFormOptionsObject(value: 3, displayText:"Recurve")
+        section.addFormRow(row)
+        
+        
+        // Slider
+        row = XLFormRowDescriptor(tag: Tags.DrawWeight, rowType: XLFormRowDescriptorTypeSlider, title: "Draw Weight (lbs)")
+        row.value = 20
+        row.cellConfigAtConfigure["slider.maximumValue"] = 100
+        row.cellConfigAtConfigure["slider.minimumValue"] = 10
+        row.cellConfigAtConfigure["steps"] = 100
+        section.addFormRow(row)
+        // Twitter
             row = XLFormRowDescriptor(tag: Tags.Name, rowType: XLFormRowDescriptorTypeTwitter, title: "Twitter")
             row.disabled = NSNumber(value: true as Bool)
             row.value = "@no_editable"
