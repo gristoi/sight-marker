@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0211B658D8E78A3A456179420D282472"
+               BlueprintIdentifier = "05F0AAFE035A60EA92FCF2C62170B7F9"
                BuildableName = "Pods_sight_marker.framework"
                BlueprintName = "Pods-sight-marker"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0211B658D8E78A3A456179420D282472"
+            BlueprintIdentifier = "05F0AAFE035A60EA92FCF2C62170B7F9"
             BuildableName = "Pods_sight_marker.framework"
             BlueprintName = "Pods-sight-marker"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -29,17 +29,55 @@
  */
 
 import UIKit
+import AVFoundation
 
-internal struct Pulse {
-    /// An Array of layers.
-    internal lazy var layers = [CAShapeLayer]()
-    
-    /// A UIColor.
-    internal var color = Color.grey.base
-    
-    /// A reference to the PulseAnimation.
-    internal var animation = PulseAnimation.pointWithBacking
-    
-    /// The opcaity value for the pulse animation.
-    internal var opacity: CGFloat = 0.18
+extension UIViewController {
+    /**
+     A convenience property that provides access to the EditorController.
+     This is the recommended method of accessing the EditorController
+     through child UIViewControllers.
+     */
+    public var editorController: EditorController? {
+        var viewController: UIViewController? = self
+        while nil != viewController {
+            if viewController is EditorController {
+                return viewController as? EditorController
+            }
+            viewController = viewController?.parent
+        }
+        return nil
+    }
 }
+
+open class EditorController: ToolbarController {
+    /// A reference to the Editor instance.
+    @IBInspectable
+    open private(set) lazy var editor: Editor = Editor()
+    
+    /**
+     Prepares the view instance when intialized. When subclassing,
+     it is recommended to override the prepare method
+     to initialize property values and other setup operations.
+     The super.prepare method should always be called immediately
+     when subclassing.
+     */
+    open override func prepare() {
+        super.prepare()
+        view.backgroundColor = .white
+        
+        prepareToolbar()
+        prepareEditor()
+    }
+    
+    /// Prepares the toolbar.
+    private func prepareToolbar() {
+        toolbar.depthPreset = .none
+    }
+    
+    /// Prepares editor.
+    private func prepareEditor() {
+        editor.delegate = self
+    }
+}
+
+extension EditorController: EditorDelegate {}

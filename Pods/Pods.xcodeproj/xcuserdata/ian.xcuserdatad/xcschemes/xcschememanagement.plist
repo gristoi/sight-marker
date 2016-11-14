@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Eureka.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0211B658D8E78A3A456179420D282472</key>
+		<key>01624275840CFCA871008821F196695A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>04693735BCFA74B873DE04047ECC5FBA</key>
+		<key>05F0AAFE035A60EA92FCF2C62170B7F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>08C670F14C5E0F92D52B4FD40051294F</key>
+		<key>4065C2C098C4D20F1A70F3168BE7760F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1B006392A6DC63E06AC81DE6F08803B1</key>
+		<key>6A38D97FB95BE3AFBAC4C4174DF1A054</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C8F169FC021F61A633DD2D0B7757D9D</key>
+		<key>873B1A0D84F1FF2C0ECD8A2440705B43</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>57693A648F686483EB21E83F30B7F514</key>
+		<key>CEB4F658381401D81D5A5DD6EDBF8D39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D995D443E8DE2DFB5A6CCA6C45380B40</key>
 		<dict>
 			<key>primary</key>
 			<true/>
