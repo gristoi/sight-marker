@@ -1,5 +1,4 @@
 PODS:
-  - Eureka (2.0.0-beta.1)
   - Material (2.3.8):
     - Material/Core (= 2.3.8)
   - Material/Core (2.3.8)
@@ -8,11 +7,12 @@ PODS:
   - Realm/Headers (2.0.3)
   - RealmSwift (2.0.3):
     - Realm (= 2.0.3)
+  - XLForm (3.2.0)
 
 DEPENDENCIES:
-  - Eureka (~> 2.0.0-beta.1)
   - Material (from `https://github.com/CosmicMind/Material.git`, branch `development`)
   - RealmSwift
+  - XLForm (~> 3.0)
 
 EXTERNAL SOURCES:
   Material:
@@ -25,11 +25,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/CosmicMind/Material.git
 
 SPEC CHECKSUMS:
-  Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
   Material: d1141bd0cae4c423709349920c1ca541b0521d81
   Realm: 5f008bfe3c8c47142eddfc30b8c1584cde22db24
   RealmSwift: 5afb451f65b682242f272dbb52d5c6f6e343c980
+  XLForm: 2250b4e96ab8ffa5f3355838c79edd90de451782
 
-PODFILE CHECKSUM: 74cc86953d95e8d548cbf2845747e7009e1c8efd
+PODFILE CHECKSUM: 101a9917354a69d5015280b1bb653cd2e737a67b
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.2
