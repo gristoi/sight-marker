@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C041D8A1DDCA6B80051C349 /* Bow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C041D891DDCA6B80051C349 /* Bow.swift */; };
+		3C041D8C1DDCA6C50051C349 /* Sighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C041D8B1DDCA6C50051C349 /* Sighting.swift */; };
+		3C041D8E1DDCD3FA0051C349 /* BowTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C041D8D1DDCD3FA0051C349 /* BowTableTableViewController.swift */; };
 		3CA7DB621DCB954700FB0BB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA7DB611DCB954700FB0BB9 /* AppDelegate.swift */; };
 		3CA7DB641DCB954700FB0BB9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA7DB631DCB954700FB0BB9 /* RootViewController.swift */; };
 		3CA7DB671DCB954700FB0BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA7DB651DCB954700FB0BB9 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C041D891DDCA6B80051C349 /* Bow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bow.swift; sourceTree = "<group>"; };
+		3C041D8B1DDCA6C50051C349 /* Sighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sighting.swift; sourceTree = "<group>"; };
+		3C041D8D1DDCD3FA0051C349 /* BowTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowTableTableViewController.swift; sourceTree = "<group>"; };
 		3CA7DB5E1DCB954700FB0BB9 /* sight-marker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sight-marker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA7DB611DCB954700FB0BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA7DB631DCB954700FB0BB9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +73,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3C041D881DDCA6A60051C349 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C041D891DDCA6B80051C349 /* Bow.swift */,
+				3C041D8B1DDCA6C50051C349 /* Sighting.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		3CA7DB551DCB954700FB0BB9 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +103,7 @@
 		3CA7DB601DCB954700FB0BB9 /* sight-marker */ = {
 			isa = PBXGroup;
 			children = (
+				3C041D881DDCA6A60051C349 /* Models */,
 				3CA7DB611DCB954700FB0BB9 /* AppDelegate.swift */,
 				3CA7DB631DCB954700FB0BB9 /* RootViewController.swift */,
 				3CA7DB651DCB954700FB0BB9 /* Main.storyboard */,
@@ -99,6 +115,7 @@
 				3CA7DB731DCB985800FB0BB9 /* AppMenuController.swift */,
 				3CA7DB751DCBB7C200FB0BB9 /* NewViewController.swift */,
 				3CD768181DD79631009B1374 /* ManageBowViewController.swift */,
+				3C041D8D1DDCD3FA0051C349 /* BowTableTableViewController.swift */,
 			);
 			path = "sight-marker";
 			sourceTree = "<group>";
@@ -229,7 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C041D8A1DDCA6B80051C349 /* Bow.swift in Sources */,
+				3C041D8E1DDCD3FA0051C349 /* BowTableTableViewController.swift in Sources */,
 				3CA7DB641DCB954700FB0BB9 /* RootViewController.swift in Sources */,
+				3C041D8C1DDCA6C50051C349 /* Sighting.swift in Sources */,
 				3CA7DB621DCB954700FB0BB9 /* AppDelegate.swift in Sources */,
 				3CA7DB741DCB985800FB0BB9 /* AppMenuController.swift in Sources */,
 				3CD768191DD79631009B1374 /* ManageBowViewController.swift in Sources */,
