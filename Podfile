@@ -6,7 +6,7 @@ target 'sight-marker' do
   use_frameworks!
 	pod 'Material', :git => 'https://github.com/CosmicMind/Material.git', :branch => 'development'
 	pod 'RealmSwift'
-    pod 'Eureka', '~> 2.0.0-beta.1'
+    pod 'XLForm', '~> 3.0'
   # Pods for sight-marker
 
 end
