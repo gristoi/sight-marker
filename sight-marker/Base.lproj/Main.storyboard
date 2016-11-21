@@ -34,11 +34,7 @@
                                         </constraints>
                                         <state key="normal" title="ADD"/>
                                         <connections>
-<<<<<<< HEAD
                                             <segue destination="yjm-B6-LIr" kind="show" id="5ml-CW-Mxv"/>
-=======
-                                            <segue destination="Lcn-wa-Xro" kind="show" id="cSB-25-WmF"/>
->>>>>>> 05f3d87ae61d7fdf84888273e51d8aed38adc80f
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xS6-Eg-cNm">
@@ -160,21 +156,13 @@
                                                             <rect key="frame" x="239" y="0.0" width="120" height="43"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lT-ID-GL1">
-<<<<<<< HEAD
                                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="22"/>
-=======
-                                                                    <rect key="frame" x="0.0" y="0.0" width="119.5" height="22.5"/>
->>>>>>> 05f3d87ae61d7fdf84888273e51d8aed38adc80f
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Marking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spk-VR-KMn">
-<<<<<<< HEAD
                                                                     <rect key="frame" x="0.0" y="22" width="120" height="21"/>
-=======
-                                                                    <rect key="frame" x="0.0" y="22.5" width="119.5" height="20.5"/>
->>>>>>> 05f3d87ae61d7fdf84888273e51d8aed38adc80f
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -231,7 +219,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="Add A Bow" id="wIO-oK-BkU">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bTW-oy-uIn">
                             <connections>
@@ -248,13 +235,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qU7-lV-Xau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4642" y="340"/>
-=======
-                    <navigationItem key="navigationItem" id="Gkd-3E-zhw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qU7-lV-Xau" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3260" y="341.37931034482762"/>
->>>>>>> 05f3d87ae61d7fdf84888273e51d8aed38adc80f
         </scene>
         <!--Distances-->
         <scene sceneID="HqV-tt-Au6">
@@ -406,80 +386,32 @@
                                 <rect key="frame" x="20" y="100" width="335" height="467"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbR-0e-doe">
-<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="21"/>
-=======
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
->>>>>>> 05f3d87ae61d7fdf84888273e51d8aed38adc80f
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oEf-Db-Z1i">
-<<<<<<< HEAD
                                         <rect key="frame" x="-2" y="68" width="339" height="31"/>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdK-iq-C0b">
                                         <rect key="frame" x="0.0" y="146" width="335" height="21"/>
-=======
-                                        <rect key="frame" x="-2" y="39" width="339" height="31"/>
-                                    </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdK-iq-C0b">
-                                        <rect key="frame" x="0.0" y="88" width="335" height="20.5"/>
->>>>>>> 05f3d87ae61d7fdf84888273e51d8aed38adc80f
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7k7-1i-vUf">
-<<<<<<< HEAD
                                         <rect key="frame" x="-2" y="214" width="339" height="31"/>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hole number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlU-13-kyU">
                                         <rect key="frame" x="0.0" y="291" width="335" height="21"/>
-=======
-                                        <rect key="frame" x="-2" y="127" width="339" height="31"/>
-                                    </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hole number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlU-13-kyU">
-                                        <rect key="frame" x="0.0" y="175.5" width="335" height="20.5"/>
->>>>>>> 05f3d87ae61d7fdf84888273e51d8aed38adc80f
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GJy-Su-shP">
-<<<<<<< HEAD
                                         <rect key="frame" x="-2" y="360" width="339" height="31"/>
                                     </slider>
-=======
-                                        <rect key="frame" x="-2" y="215" width="339" height="31"/>
-                                    </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZA-Wm-WB3">
-                                        <rect key="frame" x="0.0" y="263.5" width="335" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-sr-m9E">
-                                        <rect key="frame" x="0.0" y="302.5" width="335" height="29"/>
-                                        <segments>
-                                            <segment title="Meters"/>
-                                            <segment title="Yards"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiX-st-gdQ">
-                                        <rect key="frame" x="0.0" y="349" width="335" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmQ-eR-a5B">
-                                        <rect key="frame" x="0.0" y="388.5" width="335" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
->>>>>>> 05f3d87ae61d7fdf84888273e51d8aed38adc80f
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oD9-C0-vKm">
                                         <rect key="frame" x="0.0" y="437" width="335" height="30"/>
                                         <state key="normal" title="Save"/>
