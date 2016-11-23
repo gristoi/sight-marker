@@ -4,7 +4,6 @@
 target 'sight-marker' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-	pod 'Material', :git => 'https://github.com/CosmicMind/Material.git', :branch => 'development'
 	pod 'RealmSwift'
     pod 'Eureka', '~> 2.0.0-beta.1'
   # Pods for sight-marker

@@ -10,10 +10,12 @@
 		3C041D8A1DDCA6B80051C349 /* Bow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C041D891DDCA6B80051C349 /* Bow.swift */; };
 		3C041D8C1DDCA6C50051C349 /* Sighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C041D8B1DDCA6C50051C349 /* Sighting.swift */; };
 		3C041D8E1DDCD3FA0051C349 /* BowTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C041D8D1DDCD3FA0051C349 /* BowTableTableViewController.swift */; };
+		3C2C6CA01DE610F6000F9921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C6C9E1DE610F6000F9921 /* Main.storyboard */; };
+		3C87E1641DE434D100C5F675 /* TrangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87E1631DE434D100C5F675 /* TrangleView.swift */; };
+		3C87E1661DE5878500C5F675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C87E1651DE5878500C5F675 /* Assets.xcassets */; };
+		3C87E1691DE5FAD400C5F675 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87E1681DE5FAD400C5F675 /* SegmentedControl.swift */; };
 		3CA7DB621DCB954700FB0BB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA7DB611DCB954700FB0BB9 /* AppDelegate.swift */; };
 		3CA7DB641DCB954700FB0BB9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA7DB631DCB954700FB0BB9 /* RootViewController.swift */; };
-		3CA7DB671DCB954700FB0BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA7DB651DCB954700FB0BB9 /* Main.storyboard */; };
-		3CA7DB691DCB954700FB0BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA7DB681DCB954700FB0BB9 /* Assets.xcassets */; };
 		3CA7DB6C1DCB954700FB0BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA7DB6A1DCB954700FB0BB9 /* LaunchScreen.storyboard */; };
 		3CA7DB741DCB985800FB0BB9 /* AppMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA7DB731DCB985800FB0BB9 /* AppMenuController.swift */; };
 		3CA7DB761DCBB7C200FB0BB9 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA7DB751DCBB7C200FB0BB9 /* NewViewController.swift */; };
@@ -25,11 +27,13 @@
 		3C041D891DDCA6B80051C349 /* Bow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bow.swift; sourceTree = "<group>"; };
 		3C041D8B1DDCA6C50051C349 /* Sighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sighting.swift; sourceTree = "<group>"; };
 		3C041D8D1DDCD3FA0051C349 /* BowTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowTableTableViewController.swift; sourceTree = "<group>"; };
+		3C2C6C9F1DE610F6000F9921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C87E1631DE434D100C5F675 /* TrangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrangleView.swift; sourceTree = "<group>"; };
+		3C87E1651DE5878500C5F675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C87E1681DE5FAD400C5F675 /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		3CA7DB5E1DCB954700FB0BB9 /* sight-marker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sight-marker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA7DB611DCB954700FB0BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA7DB631DCB954700FB0BB9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		3CA7DB661DCB954700FB0BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3CA7DB681DCB954700FB0BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CA7DB6B1DCB954700FB0BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CA7DB6D1DCB954700FB0BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CA7DB731DCB985800FB0BB9 /* AppMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMenuController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		3C87E1671DE5FAC000C5F675 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				3C87E1681DE5FAD400C5F675 /* SegmentedControl.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
 		3CA7DB551DCB954700FB0BB9 = {
 			isa = PBXGroup;
 			children = (
@@ -99,17 +111,19 @@
 		3CA7DB601DCB954700FB0BB9 /* sight-marker */ = {
 			isa = PBXGroup;
 			children = (
+				3C2C6C9E1DE610F6000F9921 /* Main.storyboard */,
+				3C87E1671DE5FAC000C5F675 /* Controls */,
+				3C87E1651DE5878500C5F675 /* Assets.xcassets */,
 				3C041D881DDCA6A60051C349 /* Models */,
 				3CA7DB611DCB954700FB0BB9 /* AppDelegate.swift */,
 				3CA7DB631DCB954700FB0BB9 /* RootViewController.swift */,
-				3CA7DB651DCB954700FB0BB9 /* Main.storyboard */,
-				3CA7DB681DCB954700FB0BB9 /* Assets.xcassets */,
 				3CA7DB6A1DCB954700FB0BB9 /* LaunchScreen.storyboard */,
 				3CA7DB6D1DCB954700FB0BB9 /* Info.plist */,
 				3CA7DB731DCB985800FB0BB9 /* AppMenuController.swift */,
 				3CA7DB751DCBB7C200FB0BB9 /* NewViewController.swift */,
 				3CD768181DD79631009B1374 /* ManageBowViewController.swift */,
 				3C041D8D1DDCD3FA0051C349 /* BowTableTableViewController.swift */,
+				3C87E1631DE434D100C5F675 /* TrangleView.swift */,
 			);
 			path = "sight-marker";
 			sourceTree = "<group>";
@@ -177,9 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2C6CA01DE610F6000F9921 /* Main.storyboard in Resources */,
 				3CA7DB6C1DCB954700FB0BB9 /* LaunchScreen.storyboard in Resources */,
-				3CA7DB691DCB954700FB0BB9 /* Assets.xcassets in Resources */,
-				3CA7DB671DCB954700FB0BB9 /* Main.storyboard in Resources */,
+				3C87E1661DE5878500C5F675 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +212,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		59C7F5C27F72C755E7B390D2 /* [CP] Copy Pods Resources */ = {
@@ -238,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C87E1641DE434D100C5F675 /* TrangleView.swift in Sources */,
 				3C041D8A1DDCA6B80051C349 /* Bow.swift in Sources */,
 				3C041D8E1DDCD3FA0051C349 /* BowTableTableViewController.swift in Sources */,
 				3CA7DB641DCB954700FB0BB9 /* RootViewController.swift in Sources */,
@@ -245,6 +260,7 @@
 				3CA7DB621DCB954700FB0BB9 /* AppDelegate.swift in Sources */,
 				3CA7DB741DCB985800FB0BB9 /* AppMenuController.swift in Sources */,
 				3CD768191DD79631009B1374 /* ManageBowViewController.swift in Sources */,
+				3C87E1691DE5FAD400C5F675 /* SegmentedControl.swift in Sources */,
 				3CA7DB761DCBB7C200FB0BB9 /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,10 +268,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3CA7DB651DCB954700FB0BB9 /* Main.storyboard */ = {
+		3C2C6C9E1DE610F6000F9921 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3CA7DB661DCB954700FB0BB9 /* Base */,
+				3C2C6C9F1DE610F6000F9921 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

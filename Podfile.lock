@@ -1,8 +1,5 @@
 PODS:
   - Eureka (2.0.0-beta.1)
-  - Material (2.3.14):
-    - Material/Core (= 2.3.14)
-  - Material/Core (2.3.14)
   - Realm (2.1.0):
     - Realm/Headers (= 2.1.0)
   - Realm/Headers (2.1.0)
@@ -11,25 +8,13 @@ PODS:
 
 DEPENDENCIES:
   - Eureka (~> 2.0.0-beta.1)
-  - Material (from `https://github.com/CosmicMind/Material.git`, branch `development`)
   - RealmSwift
-
-EXTERNAL SOURCES:
-  Material:
-    :branch: development
-    :git: https://github.com/CosmicMind/Material.git
-
-CHECKOUT OPTIONS:
-  Material:
-    :commit: 0eb66bf725a6017ad13cb19e74f6e063e108f21c
-    :git: https://github.com/CosmicMind/Material.git
 
 SPEC CHECKSUMS:
   Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
-  Material: 6257b66bf6f808b1a138fa51b71651f75394f0ba
   Realm: bc829ad0ef3d4eea70c34cfcc3b1704d18d50df1
   RealmSwift: a4d4abbf0088c337cab5b738054395842e4b3052
 
-PODFILE CHECKSUM: 74cc86953d95e8d548cbf2845747e7009e1c8efd
+PODFILE CHECKSUM: b9c44f5ddb3ab71dafd1310557d19d130684d426
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.0.1

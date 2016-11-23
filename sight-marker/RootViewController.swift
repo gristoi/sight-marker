@@ -14,23 +14,28 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     let realm = try! Realm()
     var bow: Bow?
     
+    @IBOutlet weak var switchBowsButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var bowNameLabel: UILabel!
     @IBOutlet weak var bowTypeLabel: UILabel!
     @IBOutlet weak var bowDrawWeightLabel: UILabel!
     open override func viewDidLoad() {
         super.viewDidLoad()
+        switchBowsButton.imageView?.contentMode = UIViewContentMode.center
         let predicate = NSPredicate(format: "isDefault = %ld", 1)
         bow = realm.objects(Bow.self).filter(predicate).first
         bowNameLabel.text = bow?.riser
         bowTypeLabel.text = bow?.bow
         bowDrawWeightLabel.text = "Draw Weight : \(bow!.drawWeight) lbs"
-        let sighting  = Sighting()
-        sighting.distance = 10
-        sighting.marking = 1.9
-        sighting.hole = 0
-        bow?.sightings.append(sighting)
-        tableView.reloadData()
+        try! realm.write{
+            let sighting  = Sighting()
+            sighting.distance = 10
+            sighting.marking = 1.9
+            sighting.hole = 0
+            bow?.sightings.append(sighting)
+            bow?.riser = "SF Forged Pro"
+        }
+                tableView.reloadData()
 
     }
 
@@ -47,8 +52,8 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
             ?? UITableViewCell(style: .subtitle, reuseIdentifier: cellIdentifier)
         // Adding the right informations
-        cell.textLabel?.text = String(describing: element?.distance)
-        cell.detailTextLabel?.text = String(describing: element?.marking)
+        //cell.textLabel?.text = String(describing: element?.distance)
+       // cell.detailTextLabel?.text = String(describing: element?.marking)
         
         // Returning the cell
         return cell
