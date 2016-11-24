@@ -9,7 +9,10 @@
 import UIKit
 
 import Eureka
-import RealmSwift
+
+protocol ManageBowDelegate: class {
+    func didSaveBow(sender: ManageBowViewController, bow: Bow)
+}
 
 public final class ImageCheckRow<T: Equatable>: Row<ImageCheckCell<T>>, SelectableRowType, RowType {
     public var selectableValue: T?
@@ -57,6 +60,8 @@ public class ImageCheckCell<T: Equatable> : Cell<T>, CellType {
 
 class ManageBowViewController: FormViewController {
 
+    weak var delegate:ManageBowDelegate?
+    
     @IBAction func saveBow(_ sender: Any) {
         let valuesDictionary = form.values()
         guard let riser = valuesDictionary["riser"] as? String else {
@@ -69,19 +74,9 @@ class ManageBowViewController: FormViewController {
         newBow.riser = riser
         newBow.bow = bow!
         newBow.drawWeight = drawWeight
+        
+        delegate?.didSaveBow(sender: self, bow: newBow)
         // Get the default Realm
-        let realm = try! Realm()
-        
-        if (realm.objects(Bow.self).isEmpty) {
-            newBow.isDefault = true
-        }
-        
-
-        try! realm.write {
-            realm.add(newBow)
-        }
-        
-        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancelButtonClicked(_ sender: Any) {

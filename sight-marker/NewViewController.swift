@@ -2,6 +2,7 @@ import UIKit
 
 class NewViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
+    var sighting: SightingModel?
     
     @IBOutlet weak var distanceValueLabel: UILabel!
     
@@ -15,6 +16,10 @@ class NewViewController: UIViewController, UIViewControllerTransitioningDelegate
         
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
+        guard let existingSighting = sighting else {
+            return nil
+        }
+        distanceValueLabel.text = "\(existingSighting.distance)"
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {

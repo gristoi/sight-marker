@@ -15,10 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //let rootVC = storyboard.instantiateViewController(withIdentifier: "RootViewController")
-        //self.window?.rootViewController = AppMenuController(rootViewController: rootVC)
-        //self.window?.makeKeyAndVisible()
+        let result = UserDefaults.standard.bool(forKey: "onboarded")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if !result {
+            let rootVC = storyboard.instantiateViewController(withIdentifier: "OnBoardingViewController")
+            self.window?.rootViewController = rootVC
+            self.window?.makeKeyAndVisible()
+            return false
+        }
+        
+        let rootVC = storyboard.instantiateViewController(withIdentifier: "RootViewController")
+        self.window?.rootViewController = rootVC
+        self.window?.makeKeyAndVisible()
         return true
     }
 

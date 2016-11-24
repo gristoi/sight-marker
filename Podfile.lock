@@ -1,6 +1,5 @@
 PODS:
   - Eureka (2.0.0-beta.1)
-  - paper-onboarding (2.0.1)
   - Realm (2.1.0):
     - Realm/Headers (= 2.1.0)
   - Realm/Headers (2.1.0)
@@ -9,15 +8,13 @@ PODS:
 
 DEPENDENCIES:
   - Eureka (~> 2.0.0-beta.1)
-  - paper-onboarding (~> 2.0.0)
   - RealmSwift
 
 SPEC CHECKSUMS:
   Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
-  paper-onboarding: a8e001214d9ce9decf78e160b3823f396dbd51ac
   Realm: bc829ad0ef3d4eea70c34cfcc3b1704d18d50df1
   RealmSwift: a4d4abbf0088c337cab5b738054395842e4b3052
 
-PODFILE CHECKSUM: c66cec0bded0fed5057e1dd342635babe6d3382e
+PODFILE CHECKSUM: b9c44f5ddb3ab71dafd1310557d19d130684d426
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.0.1

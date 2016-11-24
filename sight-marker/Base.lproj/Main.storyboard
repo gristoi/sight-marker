@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lnN-rg-MfN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sOH-IK-q8f">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,10 +11,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--On Boarding View Controller-->
+        <scene sceneID="MQb-Fr-q84">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingViewController" id="WBh-f3-3fc" customClass="OnBoardingViewController" customModule="sight_marker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9dM-B5-GzS"/>
+                        <viewControllerLayoutGuide type="bottom" id="832-X4-b6Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A70-Ik-h8C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="oCu-2w-pmE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlA-vL-6qh">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ADD A BOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBowButtonClicked:" destination="WBh-f3-3fc" eventType="touchUpInside" id="pCd-5R-bF1"/>
+                                    <segue destination="0aD-ri-Rrp" kind="show" identifier="addBowSegue" id="SJc-s8-2ou"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oCu-2w-pmE" firstAttribute="leading" secondItem="A70-Ik-h8C" secondAttribute="leading" id="dWm-qy-HRd"/>
+                            <constraint firstAttribute="trailing" secondItem="oCu-2w-pmE" secondAttribute="trailing" id="fDG-BB-HeU"/>
+                            <constraint firstItem="oCu-2w-pmE" firstAttribute="top" secondItem="9dM-B5-GzS" secondAttribute="bottom" id="jkV-Mz-juL"/>
+                            <constraint firstItem="832-X4-b6Y" firstAttribute="top" secondItem="oCu-2w-pmE" secondAttribute="bottom" id="pcl-Gt-6OU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addBowButton" destination="dlA-vL-6qh" id="Ksh-Uj-QZ4"/>
+                        <segue destination="sOH-IK-q8f" kind="show" identifier="rootViewControllerSegue" id="4Qm-kR-g4K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSQ-Kj-jyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="-375"/>
+        </scene>
         <!--Bows-->
         <scene sceneID="XwX-A3-CCI">
             <objects>
-                <viewController id="sOH-IK-q8f" customClass="RootViewController" customModule="sight_marker" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RootViewController" id="sOH-IK-q8f" customClass="RootViewController" customModule="sight_marker" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TIU-0Z-ZFR"/>
                         <viewControllerLayoutGuide type="bottom" id="Net-4p-bIl"/>
@@ -188,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pl4-NB-2Db" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="256.80000000000001" y="339.58020989505252"/>
+            <point key="canvasLocation" x="273" y="462"/>
         </scene>
         <!--Add A Bow-->
         <scene sceneID="tuD-Rt-Ldo">
@@ -218,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qU7-lV-Xau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4642" y="340"/>
+            <point key="canvasLocation" x="3802" y="-350"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="uVm-1c-SZm">
@@ -346,7 +390,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.84826144366197187" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.94629226557977997" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LVX-pO-wXB" firstAttribute="top" secondItem="GUt-sO-Y0Z" secondAttribute="bottom" constant="10" id="8KV-V7-XYq"/>
                             <constraint firstItem="LVX-pO-wXB" firstAttribute="leading" secondItem="JAf-tX-VvU" secondAttribute="leadingMargin" constant="4" id="ItD-l5-dkX"/>
@@ -378,7 +422,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UwV-RH-Yma" id="XyD-pC-VFj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -421,7 +465,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azW-UG-elf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3932" y="340"/>
+            <point key="canvasLocation" x="2831" y="-350"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d8E-FB-5D2">
@@ -441,52 +485,17 @@
             </objects>
             <point key="canvasLocation" x="2256.8000000000002" y="340.47976011994007"/>
         </scene>
-        <!--On Boarding View Controller-->
-        <scene sceneID="str-ux-xpf">
-            <objects>
-                <viewController id="lnN-rg-MfN" customClass="OnBoardingViewController" customModule="sight_marker" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eWK-Iu-cpw"/>
-                        <viewControllerLayoutGuide type="bottom" id="PLL-6t-S6d"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fF3-8a-h2H" customClass="PaperOnboarding" customModule="paper_onboarding">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Jt-ch-ohh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2407" y="-283"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="7Em-Wj-waJ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lcn-wa-Xro" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iK3-32-e1Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="e0T-o5-t1E" kind="relationship" relationship="rootViewController" id="8OP-d1-jCc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DHw-lv-OL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3332" y="-376"/>
-        </scene>
     </scenes>
     <resources>
         <image name="cm_audio_library_white" width="24" height="24"/>
         <image name="exchange" width="25" height="25"/>
         <image name="ic_add_circle" width="24" height="24"/>
+        <image name="launch" width="375" height="667"/>
         <image name="mountain" width="1920" height="1080"/>
         <image name="scope" width="25" height="25"/>
         <image name="slide" width="224" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8OP-d1-jCc"/>
+        <segue reference="SJc-s8-2ou"/>
     </inferredMetricsTieBreakers>
 </document>

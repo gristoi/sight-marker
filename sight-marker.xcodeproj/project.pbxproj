@@ -10,6 +10,8 @@
 		3C041D8A1DDCA6B80051C349 /* Bow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C041D891DDCA6B80051C349 /* Bow.swift */; };
 		3C041D8C1DDCA6C50051C349 /* Sighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C041D8B1DDCA6C50051C349 /* Sighting.swift */; };
 		3C041D8E1DDCD3FA0051C349 /* BowTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C041D8D1DDCD3FA0051C349 /* BowTableTableViewController.swift */; };
+		3C1FA59B1DE76FB000262E98 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1FA59A1DE76FB000262E98 /* OnBoardingViewController.swift */; };
+		3C1FA59D1DE7853000262E98 /* SightingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1FA59C1DE7853000262E98 /* SightingModel.swift */; };
 		3C2C6CA01DE610F6000F9921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C6C9E1DE610F6000F9921 /* Main.storyboard */; };
 		3C87E1641DE434D100C5F675 /* TrangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87E1631DE434D100C5F675 /* TrangleView.swift */; };
 		3C87E1661DE5878500C5F675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C87E1651DE5878500C5F675 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		3C041D891DDCA6B80051C349 /* Bow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bow.swift; sourceTree = "<group>"; };
 		3C041D8B1DDCA6C50051C349 /* Sighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sighting.swift; sourceTree = "<group>"; };
 		3C041D8D1DDCD3FA0051C349 /* BowTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowTableTableViewController.swift; sourceTree = "<group>"; };
+		3C1FA59A1DE76FB000262E98 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		3C1FA59C1DE7853000262E98 /* SightingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SightingModel.swift; sourceTree = "<group>"; };
 		3C2C6C9F1DE610F6000F9921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C87E1631DE434D100C5F675 /* TrangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrangleView.swift; sourceTree = "<group>"; };
 		3C87E1651DE5878500C5F675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			children = (
 				3C041D891DDCA6B80051C349 /* Bow.swift */,
 				3C041D8B1DDCA6C50051C349 /* Sighting.swift */,
+				3C1FA59C1DE7853000262E98 /* SightingModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				3CD768181DD79631009B1374 /* ManageBowViewController.swift */,
 				3C041D8D1DDCD3FA0051C349 /* BowTableTableViewController.swift */,
 				3C87E1631DE434D100C5F675 /* TrangleView.swift */,
+				3C1FA59A1DE76FB000262E98 /* OnBoardingViewController.swift */,
 			);
 			path = "sight-marker";
 			sourceTree = "<group>";
@@ -209,7 +215,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		59C7F5C27F72C755E7B390D2 /* [CP] Copy Pods Resources */ = {
@@ -256,8 +262,10 @@
 				3C041D8C1DDCA6C50051C349 /* Sighting.swift in Sources */,
 				3CA7DB621DCB954700FB0BB9 /* AppDelegate.swift in Sources */,
 				3CD768191DD79631009B1374 /* ManageBowViewController.swift in Sources */,
+				3C1FA59D1DE7853000262E98 /* SightingModel.swift in Sources */,
 				3C87E1691DE5FAD400C5F675 /* SegmentedControl.swift in Sources */,
 				3CA7DB761DCBB7C200FB0BB9 /* NewViewController.swift in Sources */,
+				3C1FA59B1DE76FB000262E98 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
