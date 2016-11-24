@@ -2,6 +2,14 @@ import UIKit
 
 class NewViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
+    
+    @IBOutlet weak var distanceValueLabel: UILabel!
+    
+    @IBAction func distanceChanged(_ sender: UISlider) {
+        distanceValueLabel?.text = "\(round(sender.value))"
+    }
+    
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         

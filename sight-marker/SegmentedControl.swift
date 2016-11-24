@@ -156,8 +156,6 @@ import UIKit
     
     func addIndividualItemConstraints(_ items: [UIView], mainView: UIView, padding: CGFloat) {
         
-        let constraints = mainView.constraints
-        
         for (index, button) in items.enumerated() {
             
             let topConstraint = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: mainView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0)

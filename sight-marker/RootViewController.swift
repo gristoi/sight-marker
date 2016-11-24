@@ -45,7 +45,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Getting the right element
-        let element = bow?.sightings[indexPath.row]
+        _ = bow?.sightings[indexPath.row]
         
         // Instantiate a cell
         let cellIdentifier = "ElementCell"
