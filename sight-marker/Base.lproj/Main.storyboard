@@ -232,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pl4-NB-2Db" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="273" y="462"/>
+            <point key="canvasLocation" x="273" y="485"/>
         </scene>
         <!--Add A Bow-->
         <scene sceneID="tuD-Rt-Ldo">
@@ -259,10 +259,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="sOH-IK-q8f" kind="presentation" identifier="segueToMain" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="nhs-74-iSo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qU7-lV-Xau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3802" y="-350"/>
+            <point key="canvasLocation" x="2257" y="-338"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="uVm-1c-SZm">
@@ -407,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ch3-LJ-bUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.5999999999999" y="896.40179910044981"/>
+            <point key="canvasLocation" x="1193" y="486"/>
         </scene>
         <!--My Bows-->
         <scene sceneID="9dK-rC-mdE">
@@ -422,7 +425,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UwV-RH-Yma" id="XyD-pC-VFj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -447,7 +450,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHZ-aW-Do6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3196" y="340.47976011994007"/>
+            <point key="canvasLocation" x="3433" y="60"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bfC-Tw-NOu">
@@ -465,7 +468,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azW-UG-elf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2831" y="-350"/>
+            <point key="canvasLocation" x="1193" y="-350"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d8E-FB-5D2">
@@ -483,7 +486,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJ6-jW-3gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2256.8000000000002" y="340.47976011994007"/>
+            <point key="canvasLocation" x="2257" y="485"/>
         </scene>
     </scenes>
     <resources>
@@ -496,6 +499,7 @@
         <image name="slide" width="224" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SJc-s8-2ou"/>
+        <segue reference="nhs-74-iSo"/>
+        <segue reference="50r-Tg-TGl"/>
     </inferredMetricsTieBreakers>
 </document>

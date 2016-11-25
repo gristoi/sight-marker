@@ -50,9 +50,6 @@ extension OnBoardingViewController: ManageBowDelegate {
             realm.add(bow)
         }
         UserDefaults.standard.set(true, forKey: "onboarded")
-        sender.dismiss(animated: true, completion: {
-            self.performSegue(withIdentifier: "rootViewControllerSegue", sender: self)
-        })
-        
+        sender.performSegue(withIdentifier: "segueToMain", sender: sender)
     }
 }
