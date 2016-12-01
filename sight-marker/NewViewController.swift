@@ -1,8 +1,10 @@
 import UIKit
+import RealmSwift
 
 class NewViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
-    var sighting: SightingModel?
+    var bow: Bow?
+    var sighting: Sighting?
     
     @IBOutlet weak var distanceValueLabel: UILabel!
     
@@ -16,10 +18,6 @@ class NewViewController: UIViewController, UIViewControllerTransitioningDelegate
         
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
-        guard let existingSighting = sighting else {
-            return nil
-        }
-        distanceValueLabel.text = "\(existingSighting.distance)"
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
@@ -76,4 +74,16 @@ class HalfScreenPresentation: UIPresentationController {
      <#code#>
      }*/
     
+}
+
+extension UIViewController {
+    
+    func saveSighting(sighting: Sighting, dict: [String: AnyObject]) -> Sighting {
+        
+        let realm = try! Realm()
+            try! realm.write {
+                realm.create(sighting.s, value: dict, update: true)
+            }
+            return sighting
+    }
 }
