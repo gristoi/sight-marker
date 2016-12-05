@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sOH-IK-q8f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sOH-IK-q8f">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -71,27 +71,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="370.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alB-bL-Kp2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xS6-Eg-cNm">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="167"/>
+                                        <rect key="frame" x="0.0" y="100" width="375" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bow Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aj-at-5rV">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="33.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bow type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHf-yY-0Pi">
-                                                <rect key="frame" x="0.0" y="55.5" width="375" height="56"/>
+                                                <rect key="frame" x="0.0" y="33.5" width="375" height="33"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-XA-9dO">
-                                                <rect key="frame" x="0.0" y="111.5" width="375" height="55.5"/>
+                                                <rect key="frame" x="0.0" y="66.5" width="375" height="33.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,7 +217,6 @@
                             <constraint firstAttribute="trailing" secondItem="K5M-Fr-Gz7" secondAttribute="trailing" id="lkC-i7-ng3"/>
                             <constraint firstItem="hqO-SK-Abg" firstAttribute="centerX" secondItem="uLj-4k-dvs" secondAttribute="centerX" id="odZ-kN-T6H"/>
                             <constraint firstItem="UCK-DG-Dx1" firstAttribute="trailing" secondItem="uLj-4k-dvs" secondAttribute="trailingMargin" id="rUG-oH-zE3"/>
-                            <constraint firstItem="alB-bL-Kp2" firstAttribute="height" secondItem="uLj-4k-dvs" secondAttribute="height" multiplier="0.4" id="wZa-yx-QLp"/>
                             <constraint firstAttribute="trailing" secondItem="Ftp-G4-zDo" secondAttribute="trailing" id="yMQ-k8-a6r"/>
                         </constraints>
                     </view>
@@ -267,10 +266,10 @@
             </objects>
             <point key="canvasLocation" x="2257" y="-338"/>
         </scene>
-        <!--New View Controller-->
+        <!--Manage Sighting View Controller-->
         <scene sceneID="uVm-1c-SZm">
             <objects>
-                <viewController id="ltp-ap-OO9" customClass="NewViewController" customModule="sight_marker" sceneMemberID="viewController">
+                <viewController id="ltp-ap-OO9" customClass="ManageSightingViewController" customModule="sight_marker" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0LK-Oq-htf"/>
                         <viewControllerLayoutGuide type="bottom" id="vCC-Rz-4cm"/>
@@ -317,9 +316,6 @@
                                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tfB-1W-etS">
                                                 <rect key="frame" x="79" y="-2" width="186" height="56"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <connections>
-                                                    <action selector="distanceChanged:" destination="ltp-ap-OO9" eventType="valueChanged" id="vgj-FM-hHd"/>
-                                                </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6r-lX-9WE">
                                                 <rect key="frame" x="271" y="0.0" width="56" height="54"/>
@@ -386,6 +382,9 @@
                                         <rect key="frame" x="167.5" y="0.0" width="167.5" height="60"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="SAVE"/>
+                                        <connections>
+                                            <action selector="saveSighting:" destination="ltp-ap-OO9" eventType="touchUpInside" id="a5c-Xg-hZL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -425,7 +424,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UwV-RH-Yma" id="XyD-pC-VFj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

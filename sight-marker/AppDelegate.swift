@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let realm = try! Realm()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let result = UserDefaults.standard.bool(forKey: "onboarded")
@@ -24,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return false
         }
         
-        let rootVC = storyboard.instantiateViewController(withIdentifier: "RootViewController")
+        let rootVC = storyboard.instantiateViewController(withIdentifier: "RootViewController") as! RootViewController
+        rootVC.bowViewModel = BowViewModel(withBow: getDefaultBow())
         self.window?.rootViewController = rootVC
         self.window?.makeKeyAndVisible()
         return true
@@ -52,6 +54,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func getDefaultBow() -> Bow {
+        let predicate = NSPredicate(format: "isDefault = %ld", 1)
+        let bow = realm.objects(Bow.self).filter(predicate).first
+        return bow!
+    }
 
 }
 

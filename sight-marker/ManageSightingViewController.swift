@@ -1,8 +1,8 @@
 import UIKit
 
-class NewViewController: UIViewController, UIViewControllerTransitioningDelegate {
+class ManageSightingViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
-    var sighting: SightingModel?
+    var bowViewModel: BowViewModel?
     
     @IBOutlet weak var distanceValueLabel: UILabel!
     
@@ -10,16 +10,17 @@ class NewViewController: UIViewController, UIViewControllerTransitioningDelegate
         distanceValueLabel?.text = "\(round(sender.value))"
     }
     
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
-        guard let existingSighting = sighting else {
-            return nil
-        }
-        distanceValueLabel.text = "\(existingSighting.distance)"
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        guard let selectedSighting = bowViewModel?.selectedSighting else {return}
+        distanceValueLabel?.text = selectedSighting.distance.description
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
@@ -31,17 +32,12 @@ class NewViewController: UIViewController, UIViewControllerTransitioningDelegate
     @IBAction func cancelView(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    /*
-     // implement these methods if you don't want to use the default animation transition
-     // you'll need to return an object that meets `UIViewControllerAnimatedTransitioning` requirements which is similar to the perform method in a custom segue.
-     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-     <#code#>
-     }
-     
-     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-     <#code#>
-     }*/
     
+    @IBAction func saveSighting(_ sender: Any) {
+        
+        let sighting = Sighting()
+        sighting.distance = Double(distanceValueLabel?.text.value)
+    }
 }
 
 
