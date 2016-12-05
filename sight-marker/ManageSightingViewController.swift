@@ -1,4 +1,5 @@
 import UIKit
+import RealmSwift
 
 class ManageSightingViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
@@ -16,7 +17,7 @@ class ManageSightingViewController: UIViewController, UIViewControllerTransition
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let selectedSighting = bowViewModel?.selectedSighting else {return}
@@ -36,7 +37,7 @@ class ManageSightingViewController: UIViewController, UIViewControllerTransition
     @IBAction func saveSighting(_ sender: Any) {
         
         let sighting = Sighting()
-        sighting.distance = Double(distanceValueLabel?.text.value)
+        sighting.distance = Int((distanceValueLabel?.text)!)!
     }
 }
 
